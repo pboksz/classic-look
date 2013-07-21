@@ -1,29 +1,24 @@
 header
-  @include border-bottom-radius(20px)
+  @include border-radius(10px)
+  @include box-shadow(0 0 16px)
+  @include text-shadow(0px 4px 4px rgba(0,0,0,0.4), 0px 8px 12px rgba(0,0,0,0.1), 0px 16px 20px rgba(0,0,0,0.1))
   background: url('/assets/midground.jpg') repeat
   font-family: 'Parisienne', cursive
   overflow: hidden
   margin: 10px 0
-  border: $border
 
   .left-side
-    border-right: $border
+    border-right: 1px solid lightgray
     text-align: center
     float: left
-    width: 550px
+    width: 520px
 
     .main-title
       font-size: 4em
 
-    .secondary-title
-      font-size: 1.5em
-      margin-top: -20px
-      margin-left: 200px
-
     .links
-      border-top: $border
       font-size: 1.5em
-      padding: 10px 20px
+      padding: 0 20px 10px
 
       .link
         @include transition(all 0.4s ease-in-out)
@@ -45,6 +40,6 @@ header
   .right-side
     text-align: center
     float: right
-    width: 244px
-    margin: 26px 0
+    width: 274px
+    margin-top: 16px
     font-size: 1.5em
