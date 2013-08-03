@@ -1,5 +1,5 @@
 .main
-  .title Contact The Classic Look Salon
+  .title Contact The Classic Look
   .model= image_tag '/assets/model.png', :alt => 'Hair Model'
   .text
     .section
@@ -8,6 +8,7 @@
         Please call us during business hours regarding any question, concerns,
         or to schedule an appointment with our friendly, experienced and talented staff.
         Our phone number is
-        %strong (973) 857-4353
+        .phone
+          %strong (973) 857-4353
 
     = render 'home/hours'
